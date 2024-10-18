@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dog</title>
+
+        <script src="dogKennel.js" defer></script>
+    </head>
+    
+    <body>
+        <h2>dog kennel calculator</h2>
+
+        <!-- Form -->
+        <form>
+            <!-- Enter dog size-->
+            <label for="dogSize">Dog Size</label>
+            <select name="dogSize" id="dogSize">
+                <option value = "30">Small</option>
+                <option value = "32">Large</option>
+            </select>
+
+            <br>
+            <!--Enter days-->
+            <label for="days">How many days?</label>
+            <input type="number" id="days" name="days" min="1" max="100">
+
+            <br>
+            <!--Calculate (connect with Javascript)-->
+            <button type="button" id="calc" onclick="CalculateStay()">Calculate!</button>
+
+            <!--results-->
+            <div id = "price">Price: 0.00</div>
+            <div id = "tax">Tax: 0.00</div>
+            <div id = "total">Total: 0.00</div>
+
+            <br>
+            <div id = "secretProfit">OUR Secret Profit: 0.00</div>
+
+        </form>
+    </body>
+</html>
